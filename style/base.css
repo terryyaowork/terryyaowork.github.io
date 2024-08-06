@@ -97,7 +97,7 @@
   border-color: var(--table-border-color);
   color: var(--second-text-color) !important;
 }
-:root .code {
+:root.appearance-dark .content .code, :root.appearance-auto .content .code, :root.appearance-light .content .code {
   text-align: left;
 }
 
