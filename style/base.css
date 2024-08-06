@@ -97,8 +97,20 @@
   border-color: var(--table-border-color);
   color: var(--second-text-color) !important;
 }
+:root.appearance-dark .content .gutter, :root.appearance-auto .content .gutter, :root.appearance-light .content .gutter {
+  max-width: 3.75rem;
+  width: 3.75rem;
+}
 :root.appearance-dark .content .code, :root.appearance-auto .content .code, :root.appearance-light .content .code {
   text-align: left;
+}
+:root.appearance-dark .content .highlight, :root.appearance-auto .content .highlight, :root.appearance-light .content .highlight {
+  margin: 0.5rem;
+  padding: 0;
+  background: #fafafa;
+}
+:root.appearance-dark .content .highlight .gutter, :root.appearance-auto .content .highlight .gutter, :root.appearance-light .content .highlight .gutter {
+  background: #eee;
 }
 
 :root body {
