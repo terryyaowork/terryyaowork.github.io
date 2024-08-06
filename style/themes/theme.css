@@ -96,3 +96,6 @@
   border-color: var(--table-border-color);
   color: var(--second-text-color) !important;
 }
+:root .code {
+  text-align: left;
+}
