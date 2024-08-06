@@ -1,0 +1,86 @@
+<!DOCTYPE html><html class="appearance-auto" lang="zh-TW"><head><meta charset="UTF-8"><title>Hexo 基本設置</title><meta name="description" content="這是一個由 Terry Yao 維護的部落格，記錄技術學習與生活點滴。"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><link rel="stylesheet" href="/style/common/jquery.fancybox.min.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="Hexo 基本設定指南這份文件將帶您了解如何在本機環境中安裝和設定 Hexo，以便開始建立您的靜態部落格網站。
+先決條件在開始之前，請確認您已安裝以下軟體：
+
+Node.js（建議使用最新的 LTS 版本）
+pnpm（Node.js 套件管理工具）
+
+安裝 Hexo1. 安裝 Node.js 和 pnpm如果您還未安裝 Node.js 和 pnpm，請使用以下指令安裝：
+12345# 使用 Homebrew 安裝 Node.jsbrew install node# 安裝 pnpmbrew install pnpm
+
+2. 全域安裝 Hexo CLI使用 pnpm 全域安裝 Hexo CLI：
+1pnpm add -g hexo-cli
+
+3. 初始化 Hexo 專案選擇一個目錄來存放您的部落格專案，然後使用.."><meta name="generator" content="Hexo 7.2.0"></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">terryyaowork's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Hexo 基本設置</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">点击返回顶部</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">首页</a></h3><h3 class="is-inline-block"><a href="/about">关于</a></h3><h3 class="is-inline-block"><a href="/archives">归档</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">首页</a></h3><h3 class="is-inline-block"><a href="/about">关于</a></h3><h3 class="is-inline-block"><a href="/archives">归档</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo-%E5%9F%BA%E6%9C%AC%E8%A8%AD%E5%AE%9A%E6%8C%87%E5%8D%97"><span class="toc-text">Hexo 基本設定指南</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%88%E6%B1%BA%E6%A2%9D%E4%BB%B6"><span class="toc-text">先決條件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%9D-Hexo"><span class="toc-text">安裝 Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%9D-Node-js-%E5%92%8C-pnpm"><span class="toc-text">1. 安裝 Node.js 和 pnpm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%85%A8%E5%9F%9F%E5%AE%89%E8%A3%9D-Hexo-CLI"><span class="toc-text">2. 全域安裝 Hexo CLI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%9D%E5%A7%8B%E5%8C%96-Hexo-%E5%B0%88%E6%A1%88"><span class="toc-text">3. 初始化 Hexo 專案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE"><span class="toc-text">基本配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B6%B2%E7%AB%99%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="toc-text">網站基本信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A8%AD%E5%AE%9A%E7%B6%B2%E5%9D%80"><span class="toc-text">設定網址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A8%AD%E5%AE%9A%E4%BD%88%E5%B1%80"><span class="toc-text">設定佈局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E8%A8%AD%E5%AE%9A"><span class="toc-text">部署設定</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="toc-text">常用指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E7%B6%B2%E7%AB%99"><span class="toc-text">部署網站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C"><span class="toc-text">常見問題</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%88%E6%AC%8A%E6%A2%9D%E6%AC%BE"><span class="toc-text">授權條款</span></a></li></ol></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/hexo"><i class="tag post-item-tag">hexo</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">Hexo 基本設置</h1><time class="has-text-grey" datetime="2024-08-05T15:33:33.000Z">2024-08-05</time><article class="mt-2 post-content"><h1 id="Hexo-基本設定指南"><a href="#Hexo-基本設定指南" class="headerlink" title="Hexo 基本設定指南"></a>Hexo 基本設定指南</h1><p>這份文件將帶您了解如何在本機環境中安裝和設定 Hexo，以便開始建立您的靜態部落格網站。</p>
+<h2 id="先決條件"><a href="#先決條件" class="headerlink" title="先決條件"></a>先決條件</h2><p>在開始之前，請確認您已安裝以下軟體：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a>（建議使用最新的 LTS 版本）</li>
+<li><a target="_blank" rel="noopener" href="https://pnpm.io/">pnpm</a>（Node.js 套件管理工具）</li>
+</ul>
+<h2 id="安裝-Hexo"><a href="#安裝-Hexo" class="headerlink" title="安裝 Hexo"></a>安裝 Hexo</h2><h3 id="1-安裝-Node-js-和-pnpm"><a href="#1-安裝-Node-js-和-pnpm" class="headerlink" title="1. 安裝 Node.js 和 pnpm"></a>1. 安裝 Node.js 和 pnpm</h3><p>如果您還未安裝 Node.js 和 pnpm，請使用以下指令安裝：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用 Homebrew 安裝 Node.js</span></span><br><span class="line">brew install node</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安裝 pnpm</span></span><br><span class="line">brew install pnpm</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-全域安裝-Hexo-CLI"><a href="#2-全域安裝-Hexo-CLI" class="headerlink" title="2. 全域安裝 Hexo CLI"></a>2. 全域安裝 Hexo CLI</h3><p>使用 pnpm 全域安裝 Hexo CLI：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm add -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-初始化-Hexo-專案"><a href="#3-初始化-Hexo-專案" class="headerlink" title="3. 初始化 Hexo 專案"></a>3. 初始化 Hexo 專案</h3><p>選擇一個目錄來存放您的部落格專案，然後使用以下指令初始化 Hexo 專案：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>接下來，安裝專案所需的依賴：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm install</span><br></pre></td></tr></table></figure>
+
+<h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><p>Hexo 的基本配置檔案是根目錄下的 <code>_config.yml</code>，以下是一些常見的設定：</p>
+<h3 id="網站基本信息"><a href="#網站基本信息" class="headerlink" title="網站基本信息"></a>網站基本信息</h3><p>在 <code>_config.yml</code> 中設定網站的基本信息：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">My</span> <span class="string">Blog</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">Welcome</span> <span class="string">to</span> <span class="string">my</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">這是一個使用</span> <span class="string">Hexo</span> <span class="string">建立的部落格</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">您的名稱</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-TW</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="設定網址"><a href="#設定網址" class="headerlink" title="設定網址"></a>設定網址</h3><p>設定部落格的 URL：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://您的域名.com</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="設定佈局"><a href="#設定佈局" class="headerlink" title="設定佈局"></a>設定佈局</h3><p>選擇部落格的主題（佈局樣式）：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">claudia</span></span><br></pre></td></tr></table></figure>
+
+<p>要使用特定主題，例如 Claudia，您需要先將主題安裝到 <code>themes</code> 資料夾：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:claudiodangelis/claudia.git themes/claudia</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署設定"><a href="#部署設定" class="headerlink" title="部署設定"></a>部署設定</h3><p>設定如何將網站部署到伺服器：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">git@github.com:&lt;YOUR_USERNAME&gt;/&lt;YOUR_REPO&gt;.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure>
+
+<p>請將 <code>&lt;YOUR_USERNAME&gt;</code> 和 <code>&lt;YOUR_REPO&gt;</code> 替換為您的 GitHub 使用者名稱和倉庫名稱。</p>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><p>以下是一些常用的 Hexo 指令，幫助您在開發過程中更有效率：</p>
+<ul>
+<li><p><strong>清理檔案</strong></p>
+<p>  清除暫存檔和生成的檔案：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"><span class="comment"># 或使用簡寫</span></span><br><span class="line">hexo c</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>生成靜態檔案</strong></p>
+<p>  生成網站的靜態檔案：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 或使用簡寫</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>啟動本地開發伺服器</strong></p>
+<p>  啟動本地伺服器以預覽網站：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line"><span class="comment"># 或使用簡寫</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>  現在，您可以在瀏覽器中造訪 <code>http://localhost:4000</code>。</p>
+</li>
+<li><p><strong>部署網站</strong></p>
+<p>  部署網站到遠端伺服器：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 或使用簡寫</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>新增文章</strong></p>
+<p>  新增一篇新文章：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;文章標題&quot;</span></span><br><span class="line"><span class="comment"># 或使用簡寫</span></span><br><span class="line">hexo n <span class="string">&quot;文章標題&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="部署網站"><a href="#部署網站" class="headerlink" title="部署網站"></a>部署網站</h2><p>Hexo 支援多種部署方式，這裡以 GitHub Pages 為例：</p>
+<ol>
+<li><p>確認 <code>_config.yml</code> 中的 <code>deploy</code> 部分已正確設定。</p>
+</li>
+<li><p>執行以下指令以生成並部署網站：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br><span class="line"><span class="comment"># 或使用簡寫</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>這將自動生成靜態檔案並將它們推送到您設定的 GitHub 倉庫中。</p>
+<h2 id="常見問題"><a href="#常見問題" class="headerlink" title="常見問題"></a>常見問題</h2><ul>
+<li><strong>部落格一片空白</strong>：確認主題已正確安裝，並在 <code>_config.yml</code> 中設定 <code>theme</code>。</li>
+<li><strong>無法生成或部署</strong>：確認是否有安裝錯誤的依賴，並確保 Node.js 和 Hexo CLI 均已正確安裝。</li>
+</ul>
+<h2 id="授權條款"><a href="#授權條款" class="headerlink" title="授權條款"></a>授權條款</h2><p>這個專案遵循 MIT 授權條款 - 詳情請參閱 <a href="LICENSE">LICENSE</a> 檔案。</p>
+</article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><em></em><a class="button is-default" href="/2024/08/05/hello-world/" title="Hello World"><span class="has-text-weight-semibold">下一页: Hello World</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="Haojen/Claudia-theme-blog" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/terryyaowork"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com//"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> terryyaowork 2024</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/jquery-3.6.1.min.js"></script><script src="/js/jquery-fancybox.min.js"></script><script src="/js/img_zoom.js"></script><script src="/js/post.js"></script></body></html>

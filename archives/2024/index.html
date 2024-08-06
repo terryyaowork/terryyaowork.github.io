@@ -1,0 +1,76 @@
+<!DOCTYPE html><html class="appearance-auto" lang="zh-TW"><head><meta charset="UTF-8"><title>terryyaowork's blog</title><meta name="description" content="這是一個由 Terry Yao 維護的部落格，記錄技術學習與生活點滴。"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/widget-post-list.css"><meta name="generator" content="Hexo 7.2.0"></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">terryyaowork's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><span>归档 · 2024</span></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">首页</a></h3><h3 class="is-inline-block"><a href="/about">关于</a></h3><h3 class="is-inline-block"><a href="/archives">归档</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">首页</a></h3><h3 class="is-inline-block"><a href="/about">关于</a></h3><h3 class="is-inline-block"><a href="/archives">归档</a></h3></header><main><article class="post-container is-flex is-justify-content-center section container is-max-widescreen pt-4 px-2"><div class="columns is-variable is-1-tablet is-3-desktop-only is-2-widescreen is-full-width"><section class="column"><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><header><a href="/tags/hexo"><i class="tag post-item-tag">hexo</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2024/08/05/01-setting-hexo/">Hexo 基本設置</a></h2><time class="has-text-grey" datetime="2024-08-05T15:33:33.000Z">2024-08-05</time><p class="is-flex-grow-2 mt-2">Hexo 基本設定指南這份文件將帶您了解如何在本機環境中安裝和設定 Hexo，以便開始建立您的靜態部落格網站。
+先決條件在開始之前，請確認您已安裝以下軟體：
+
+Node.js（建議使用最新的 LTS 版本）
+pnpm（Node.js 套件管理工具）
+
+安裝 Hexo1. 安裝 Node.js 和 pnpm如果您還未安裝 Node.js 和 pnpm，請使用以下指令安裝：
+12345# 使用 Homebrew 安裝 Node.jsbrew install node# 安裝 pnpmbrew install pnpm
+
+2. 全域安裝 Hexo CLI使用 pnpm 全域安裝 Hexo CLI：
+1pnpm add -g hexo-cli
+
+3. 初始化 Hexo 專案選擇一個目錄來存放您的部落格專案，然後使用..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2024/08/05/01-setting-hexo/">更多</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/2024/08/05/hello-world/">Hello World</a></h2><time class="has-text-grey" datetime="2024-08-05T13:59:17.112Z">2024-08-05</time><p class="is-flex-grow-2 mt-2">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &amp;quot;My New Post&amp;quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo genera..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2024/08/05/hello-world/">更多</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><header><a href="/tags/jekyll"><i class="tag post-item-tag">jekyll</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2024/06/23/01-jekyll-setup-ruby/">[jekyll] 01 設定 Jekyll 所需要的 Ruby 環境</a></h2><time class="has-text-grey" datetime="2024-06-22T16:00:00.000Z">2024-06-23</time><p class="is-flex-grow-2 mt-2">要安裝並使用 Jekyll，您需要先設置好您的 Ruby 環境。以下是步驟：
+
+安裝 Ruby： 在 macOS 上，您可以使用 Homebrew 來安裝 Ruby：
+ 1brew install ruby
+
+安裝 Bundler： Bundler 是 Ruby 的包管理器，您可以使用以下命令來安裝：
+ 1gem install bundler
+
+檢查 Ruby 版本： 確保您安裝了正確的 Ruby 版本：
+ 1ruby -v
+
+設定 PATH： 在您的 .bash_profile 或 .zshrc 中添加以下內容，讓系統找到正確的 Ruby 路徑：
+ 1export PATH=&amp;quot;/usr/local/opt/ruby/bin:$PATH&amp;quot;
+
+完成以上步驟後，您就已經成功設定了 Jeky..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2024/06/23/01-jekyll-setup-ruby/">更多</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><header><a href="/tags/jekyll"><i class="tag post-item-tag">jekyll</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2024/06/23/02-jekyll-setup-posts-page/">[jekyll] 02 設定 /posts/ 頁面的內容</a></h2><time class="has-text-grey" datetime="2024-06-22T16:00:00.000Z">2024-06-23</time><p class="is-flex-grow-2 mt-2">以下是設定 Jekyll /posts/ 頁面內容的步驟：
+
+創建 posts 頁面： 在 _pages 目錄中創建一個 posts.md 文件，並添加以下內容：
+ 12345678910111213141516171819---layout: pagetitle: &amp;quot;所有文章&amp;quot;permalink: /posts/---&amp;lt;div class=&amp;quot;posts&amp;quot;&amp;gt;    &amp;lt;h1&amp;gt;&amp;#123;&amp;#123; page.title &amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;    &amp;lt;ul class=&amp;quot;post-list&amp;quot;&amp;gt;    &amp;#123;% for post in site.posts %&amp;#125;       ..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2024/06/23/02-jekyll-setup-posts-page/">更多</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><header><a href="/tags/jekyll"><i class="tag post-item-tag">jekyll</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2024/06/23/03-jekyll-setup-homepage/">[jekyll] 03 設定首頁的內容</a></h2><time class="has-text-grey" datetime="2024-06-22T16:00:00.000Z">2024-06-23</time><p class="is-flex-grow-2 mt-2">以下是設定 Jekyll 首頁內容的步驟：
+
+**修改 _config.yml**： 確保您的 _config.yml 中有以下設置：
+ 12paginate: 5paginate_path: &amp;quot;/page:num/&amp;quot;
+
+創建首頁模板： 在 _layouts 目錄中創建一個 home.html 文件，並添加以下內容：
+ 12345678910111213141516171819202122232425---layout: default---&amp;lt;div class=&amp;quot;home&amp;quot;&amp;gt;    &amp;lt;h1 class=&amp;quot;page-heading&amp;quot;&amp;gt;&amp;#123;&amp;#123; page.title | escape &amp;#125;&amp;#125;&amp;..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2024/06/23/03-jekyll-setup-homepage/">更多</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><header><a href="/tags/jekyll"><i class="tag post-item-tag">jekyll</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2024/06/23/04-jekyll-setup-categories-tags/">[jekyll] 04 設定分類和 Tags 頁面的內容</a></h2><time class="has-text-grey" datetime="2024-06-22T16:00:00.000Z">2024-06-23</time><p class="is-flex-grow-2 mt-2">以下是設定 Jekyll 分類和 Tags 頁面內容的步驟：
+
+創建分類頁面： 在 _pages 目錄中創建一個 categories.md 文件，並添加以下內容：
+ 12345678910111213141516---layout: pagetitle: &amp;quot;分類&amp;quot;permalink: /categories/---&amp;lt;div class=&amp;quot;categories&amp;quot;&amp;gt;    &amp;lt;h1&amp;gt;&amp;#123;&amp;#123; page.title &amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;    &amp;lt;ul class=&amp;quot;category-list&amp;quot;&amp;gt;    &amp;#123;% for category in site.categorie..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2024/06/23/04-jekyll-setup-categories-tags/">更多</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><header><a href="/tags/jekyll"><i class="tag post-item-tag">jekyll</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2024/06/23/05-jekyll-installation-guide/">[jekyll] 05 基本安裝 Jekyll 的流程及啟動</a></h2><time class="has-text-grey" datetime="2024-06-22T16:00:00.000Z">2024-06-23</time><p class="is-flex-grow-2 mt-2">以下是安裝 Jekyll 的基本步驟：
+
+安裝 Jekyll 和 Bundler： 在命令行中運行以下命令來安裝 Jekyll 和 Bundler：
+ 1gem install jekyll bundler
+
+創建新的 Jekyll 站點： 運行以下命令來創建一個新的 Jekyll 站點：
+ 12jekyll new myblogcd myblog
+
+安裝依賴項： 在新的站點目錄中運行以下命令來安裝所需的依賴項：
+ 1bundle install
+
+啟動本地服務器： 運行以下命令來啟動 Jekyll 本地服務器：
+ 1bundle exec jekyll serve
+
+訪問本地站點： 打開瀏覽器，訪問 http://localhost:4000 來查看您的新 Jekyll 站點。
+
+
+按照以上步驟，您就能夠..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2024/06/23/05-jekyll-installation-guide/">更多</a></section></article></section><aside class="column is-hidden-mobile is-4-tablet is-3-widescreen"><div style="position: sticky; top: 50px;"><main class="aside-card-container archives-widget is-in-archive-page"><h3>归档</h3><section><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">八月 2024</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">六月 2024</a><span class="archive-list-count">5</span></li></ul></section></main></div></aside></div></article><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
+
+window.addEventListener('resize', $claudia.throttle(function () {
+    var images = document.querySelectorAll('.js-img-fadeIn')
+
+    images.forEach($claudia.blurBackdropImg)
+}, 150))</script></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/terryyaowork"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com//"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> terryyaowork 2024</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
+
+window.addEventListener('resize', $claudia.throttle(function () {
+    var images = document.querySelectorAll('.js-img-fadeIn')
+
+    images.forEach($claudia.blurBackdropImg)
+}, 150))</script></body></html>
