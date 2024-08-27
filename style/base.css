@@ -145,6 +145,12 @@
   flex-grow: 2;
   flex-basis: 0;
 }
+:root body > main > article#page h1 {
+  max-width: 1152px;
+  display: flex;
+  margin: 0 auto;
+  padding: 4px 8px;
+}
 :root body > footer {
   margin: 0 30px;
   padding: 20px 0;
@@ -153,12 +159,6 @@
 :root body > footer .sns-container .iconfont {
   margin: 0 5px;
   font-size: 30px;
-}
-:root body > footer article#page h1 {
-  max-width: 1152px;
-  display: flex;
-  margin: 0 auto;
-  padding: 4px 8px;
 }
 
 .header-widget {
