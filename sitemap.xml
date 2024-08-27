@@ -92,14 +92,7 @@
 
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/hexo/</loc>
-    <lastmod>2024-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
+    <loc>https://terryyaowork.github.io/tags/design-pattern/</loc>
     <lastmod>2024-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -134,13 +127,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/design-pattern/</loc>
-    <lastmod>2024-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/tags/singleton/</loc>
     <lastmod>2024-08-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -161,7 +147,28 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://terryyaowork.github.io/tags/hexo/</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://terryyaowork.github.io/categories/design-pattern/</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://terryyaowork.github.io/categories/hexo/</loc>
@@ -172,27 +179,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/categories/blog/</loc>
-    <lastmod>2024-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2024-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/design-pattern/</loc>
-    <lastmod>2024-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/%E8%BB%9F%E9%AB%94%E6%9E%B6%E6%A7%8B/</loc>
     <lastmod>2024-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
