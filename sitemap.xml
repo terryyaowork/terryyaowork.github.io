@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/2024/06/23/02-jekyll-setup-posts-page/</loc>
-    
-    <lastmod>2024-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/2024/06/23/03-jekyll-setup-homepage/</loc>
     
     <lastmod>2024-08-05</lastmod>
@@ -73,6 +64,15 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://terryyaowork.github.io/2024/06/23/02-jekyll-setup-posts-page/</loc>
+    
+    <lastmod>2024-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>https://terryyaowork.github.io/</loc>
@@ -81,6 +81,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://terryyaowork.github.io/tags/hexo/</loc>
@@ -104,7 +111,7 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/Singleton/</loc>
+    <loc>https://terryyaowork.github.io/tags/singleton/</loc>
     <lastmod>2024-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -124,14 +131,14 @@
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
+    <loc>https://terryyaowork.github.io/categories/blog/</loc>
     <lastmod>2024-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
-  
-
   
   <url>
     <loc>https://terryyaowork.github.io/categories/hexo/</loc>
@@ -142,13 +149,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/categories/design-pattern/</loc>
-    <lastmod>2024-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/blog/</loc>
     <lastmod>2024-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
