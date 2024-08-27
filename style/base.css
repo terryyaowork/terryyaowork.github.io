@@ -154,7 +154,7 @@
   margin: 0 5px;
   font-size: 30px;
 }
-:root body > footer > article#page h1 {
+:root body > footer article#page h1 {
   max-width: 1152px;
   display: flex;
   margin: 0 auto;
