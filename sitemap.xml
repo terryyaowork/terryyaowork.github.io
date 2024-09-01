@@ -56,15 +56,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/2024/06/23/02-jekyll-setup-posts-page/</loc>
-    
-    <lastmod>2024-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/2024/06/23/03-jekyll-setup-homepage/</loc>
     
     <lastmod>2024-08-05</lastmod>
@@ -84,6 +75,15 @@
   
   <url>
     <loc>https://terryyaowork.github.io/2024/06/23/05-jekyll-installation-guide/</loc>
+    
+    <lastmod>2024-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/2024/06/23/02-jekyll-setup-posts-page/</loc>
     
     <lastmod>2024-08-05</lastmod>
     
