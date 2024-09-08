@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://terryyaowork.github.io/%E7%A8%8B%E5%BC%8F%E9%96%8B%E7%99%BC/20240908/3533452600/</loc>
+    <loc>https://terryyaowork.github.io/git/20240908/3533452600/</loc>
     
     <lastmod>2024-09-08</lastmod>
     
@@ -268,6 +268,13 @@
   </url>
   
   <url>
+    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/tags/hexo/</loc>
     <lastmod>2024-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -290,13 +297,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/SEO/</loc>
-    <lastmod>2024-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
     <lastmod>2024-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -326,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/%E7%A8%8B%E5%BC%8F%E9%96%8B%E7%99%BC/</loc>
+    <loc>https://terryyaowork.github.io/categories/git/</loc>
     <lastmod>2024-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

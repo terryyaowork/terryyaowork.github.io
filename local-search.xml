@@ -5,15 +5,15 @@
   
   <entry>
     <title>新手必讀：為什麼要用 Git？</title>
-    <link href="/%E7%A8%8B%E5%BC%8F%E9%96%8B%E7%99%BC/20240908/3533452600/"/>
-    <url>/%E7%A8%8B%E5%BC%8F%E9%96%8B%E7%99%BC/20240908/3533452600/</url>
+    <link href="/git/20240908/3533452600/"/>
+    <url>/git/20240908/3533452600/</url>
     
     <content type="html"><![CDATA[<h1 id="新手必讀：為什麼要用-Git？"><a href="#新手必讀：為什麼要用-Git？" class="headerlink" title="新手必讀：為什麼要用 Git？"></a>新手必讀：為什麼要用 Git？</h1><p><img src="/images/git/01-git-basic.webp" alt="基本語法指南"><br>如果你剛開始寫程式，可能聽說過 Git 這個東西，但不太確定它是什麼，為什麼要用它。別擔心，這篇文章就是為你準備的！我們來聊聊為什麼 Git 對你很重要，以及它如何讓你的程式開發生活變得更輕鬆。</p><h2 id="1-Git-到底是什麼？"><a href="#1-Git-到底是什麼？" class="headerlink" title="1. Git 到底是什麼？"></a>1. Git 到底是什麼？</h2><p>簡單來說，Git 是一個版本控制系統。聽起來很高深，對吧？其實它就像是一個超級強大的「復原」按鈕，可以幫你管理你的程式碼。</p><h2 id="2-為什麼新手要學-Git？"><a href="#2-為什麼新手要學-Git？" class="headerlink" title="2. 為什麼新手要學 Git？"></a>2. 為什麼新手要學 Git？</h2><h3 id="2-1-再也不怕搞砸你的程式了"><a href="#2-1-再也不怕搞砸你的程式了" class="headerlink" title="2.1 再也不怕搞砸你的程式了"></a>2.1 再也不怕搞砸你的程式了</h3><p>還記得你修改程式後，突然發現搞砸了，但又不記得改了哪裡嗎？有了 Git，你可以：</p><ul><li>隨時回到之前的版本</li><li>比較不同版本的差異</li><li>找出哪裡出了問題</li></ul><p>就像玩遊戲可以存檔一樣，Git 讓你在編程時也能「存檔」，怎麼改都不怕！</p><h3 id="2-2-輕鬆嘗試新想法"><a href="#2-2-輕鬆嘗試新想法" class="headerlink" title="2.2 輕鬆嘗試新想法"></a>2.2 輕鬆嘗試新想法</h3><p>有了 Git，你可以創建「分支」來測試新功能，而不會影響到主要的程式。這意味著：</p><ul><li>你可以大膽嘗試新想法</li><li>如果實驗成功，就合併回主程式</li><li>如果失敗，也不會影響原本的程式</li></ul><p>就像畫畫時可以先用鉛筆打稿一樣，Git 讓你可以安全地「打稿」你的程式。</p><h3 id="2-3-和他人合作變得超簡單"><a href="#2-3-和他人合作變得超簡單" class="headerlink" title="2.3 和他人合作變得超簡單"></a>2.3 和他人合作變得超簡單</h3><p>當你開始和他人一起寫程式時，Git 會是你最好的朋友：</p><ul><li>每個人可以同時修改不同的部分</li><li>Git 會幫你合併所有人的修改</li><li>你可以看到誰改了什麼，什麼時候改的</li></ul><p>就像是多人共筆寫作文一樣，Git 讓團隊合作變得超順暢。</p><h2 id="3-新手如何開始使用-Git？"><a href="#3-新手如何開始使用-Git？" class="headerlink" title="3. 新手如何開始使用 Git？"></a>3. 新手如何開始使用 Git？</h2><ol><li><strong>安裝 Git</strong>：在你的電腦上安裝 Git 軟體。</li><li><strong>學習基本指令</strong>：如 <code>git init</code>、<code>git add</code>、<code>git commit</code>。</li><li><strong>創建 GitHub 帳號</strong>：GitHub 是一個用 Git 的網站，可以存放你的程式。</li><li><strong>練習，練習，再練習</strong>：用 Git 管理你的小專案，慢慢就會熟悉了。</li></ol><h2 id="4-結論：為什麼你現在就該開始用-Git"><a href="#4-結論：為什麼你現在就該開始用-Git" class="headerlink" title="4. 結論：為什麼你現在就該開始用 Git"></a>4. 結論：為什麼你現在就該開始用 Git</h2><ol><li><strong>保護你的程式</strong>：不用擔心改錯程式，隨時可以回復。</li><li><strong>提升你的技能</strong>：Git 是業界標準，早點學對未來工作有幫助。</li><li><strong>為合作做準備</strong>：即使現在是自己寫程式，學會 Git 也能為將來的團隊合作做準備。</li></ol><p>記住，每個專業的程式開發者都會用 Git。現在開始學習和使用 Git，你就已經向專業程式設計師邁出了一大步！</p><p>別擔心一開始看不懂或用不習慣，這是正常的。慢慢來，持續使用，你會發現 Git 真的是個讓程式開發變得更簡單、更有趣的好工具！</p>]]></content>
     
     
     <categories>
       
-      <category>程式開發</category>
+      <category>git</category>
       
     </categories>
     
