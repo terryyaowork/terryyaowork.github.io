@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://terryyaowork.github.io/Git/20240912/3203341186/</loc>
+    
+    <lastmod>2024-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/macOS/20240908/2122020327/</loc>
     
     <lastmod>2024-09-08</lastmod>
@@ -228,27 +237,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/git/</loc>
-    <lastmod>2024-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/version-control/</loc>
-    <lastmod>2024-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/dev-tool/</loc>
-    <lastmod>2024-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/tags/design-pattern/</loc>
     <lastmod>2024-09-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -277,7 +265,28 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
+    <loc>https://terryyaowork.github.io/tags/git/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/version-control/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/dev-tool/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/Git/</loc>
     <lastmod>2024-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -306,6 +315,13 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/SEO/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
     <lastmod>2024-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -349,6 +365,13 @@
   </url>
   
   <url>
+    <loc>https://terryyaowork.github.io/categories/designpattern/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/categories/git/</loc>
     <lastmod>2024-09-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -356,7 +379,7 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/designpattern/</loc>
+    <loc>https://terryyaowork.github.io/categories/Git/</loc>
     <lastmod>2024-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
