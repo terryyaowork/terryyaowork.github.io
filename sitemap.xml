@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://terryyaowork.github.io/blog/20240908/1499619608/</loc>
+    
+    <lastmod>2024-09-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/blog/20240908/786391661/</loc>
+    
+    <lastmod>2024-09-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/blog/20240908/2034027213/</loc>
+    
+    <lastmod>2024-09-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/blog/20240805/3937366855/</loc>
+    
+    <lastmod>2024-09-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/git/20240913/1497149976/</loc>
     
     <lastmod>2024-09-14</lastmod>
@@ -12,15 +48,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/macOS/20240908/2122020327/</loc>
-    
-    <lastmod>2024-09-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/hexo/20240908/786391661/</loc>
     
     <lastmod>2024-09-13</lastmod>
     
@@ -56,15 +83,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/hexo/20240908/1499619608/</loc>
-    
-    <lastmod>2024-09-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/markdown/20240908/2445653678/</loc>
     
     <lastmod>2024-09-08</lastmod>
@@ -75,24 +93,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/personalupdate/20240901/2738877605/</loc>
-    
-    <lastmod>2024-09-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/hexo/20240908/2034027213/</loc>
-    
-    <lastmod>2024-09-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/hexo/20240805/3937366855/</loc>
     
     <lastmod>2024-09-08</lastmod>
     
@@ -316,6 +316,13 @@
   </url>
   
   <url>
+    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
+    <lastmod>2024-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/tags/mac/</loc>
     <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -324,13 +331,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/productivity/</loc>
-    <lastmod>2024-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
     <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -368,13 +368,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/categories/git/</loc>
-    <lastmod>2024-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/hexo/</loc>
     <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
