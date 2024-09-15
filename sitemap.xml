@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/blog/20240623/303548041/</loc>
+    <loc>https://terryyaowork.github.io/blog/20240623/3302600295/</loc>
     
     <lastmod>2024-09-07</lastmod>
     
@@ -209,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/blog/20240623/3302600295/</loc>
+    <loc>https://terryyaowork.github.io/blog/20240623/303548041/</loc>
     
     <lastmod>2024-09-07</lastmod>
     
@@ -382,13 +382,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/tags/mac/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -397,6 +390,13 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/productivity/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
