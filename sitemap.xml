@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://terryyaowork.github.io/devOps/20240915/3670510823/</loc>
+    
+    <lastmod>2024-09-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/devOps/20240915/277537605/</loc>
     
     <lastmod>2024-09-15</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/devOps/20240915/2194877756/</loc>
-    
-    <lastmod>2024-09-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/uncategorized/20240915/3670510823/</loc>
     
     <lastmod>2024-09-15</lastmod>
     
@@ -200,15 +200,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/blog/20240623/3302600295/</loc>
-    
-    <lastmod>2024-09-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/blog/20240623/303548041/</loc>
     
     <lastmod>2024-09-07</lastmod>
@@ -218,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/blog/20240623/2077178930/</loc>
+    <loc>https://terryyaowork.github.io/blog/20240623/3302600295/</loc>
     
     <lastmod>2024-09-07</lastmod>
     
@@ -228,6 +219,15 @@
   
   <url>
     <loc>https://terryyaowork.github.io/blog/20240623/166608104/</loc>
+    
+    <lastmod>2024-09-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/blog/20240623/2077178930/</loc>
     
     <lastmod>2024-09-07</lastmod>
     
@@ -277,14 +277,14 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/writing-style/</loc>
+    <loc>https://terryyaowork.github.io/tags/career-transition/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/career-transition/</loc>
+    <loc>https://terryyaowork.github.io/tags/writing-style/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -305,20 +305,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/environment/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/devOps/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/tags/design-pattern-behavioral/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -327,6 +313,20 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/design-pattern-structural/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/environment/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/devOps/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -412,14 +412,14 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/blog/</loc>
+    <loc>https://terryyaowork.github.io/categories/personalupdate/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/personalupdate/</loc>
+    <loc>https://terryyaowork.github.io/categories/blog/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
