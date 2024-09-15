@@ -236,62 +236,6 @@
 
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/Markdown/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/blog-writing/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/career-transition/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/writing-style/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/design-pattern/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/design-pattern-creative/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/design-pattern-behavioral/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/design-pattern-structural/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/tags/environment/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -348,6 +292,13 @@
   </url>
   
   <url>
+    <loc>https://terryyaowork.github.io/tags/blog-writing/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -368,35 +319,56 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://terryyaowork.github.io/tags/Markdown/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/career-transition/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/writing-style/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/design-pattern/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/design-pattern-creative/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/design-pattern-behavioral/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/design-pattern-structural/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/markdown/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/personalupdate/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/blog/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/designpattern/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://terryyaowork.github.io/categories/devOps/</loc>
@@ -413,7 +385,35 @@
   </url>
   
   <url>
+    <loc>https://terryyaowork.github.io/categories/blog/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/categories/macOS/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/categories/markdown/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/categories/personalupdate/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/categories/designpattern/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
