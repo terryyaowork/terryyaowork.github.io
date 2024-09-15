@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://terryyaowork.github.io/devOps/20240915/3260762878/</loc>
+    
+    <lastmod>2024-09-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/devOps/20240915/196766067/</loc>
     
     <lastmod>2024-09-15</lastmod>
@@ -276,6 +285,13 @@
   </url>
   
   <url>
+    <loc>https://terryyaowork.github.io/tags/design-pattern-structural/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/tags/environment/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -284,13 +300,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/devOps/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/design-pattern-structural/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -339,6 +348,13 @@
   </url>
   
   <url>
+    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/tags/mac/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -347,13 +363,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/productivity/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
