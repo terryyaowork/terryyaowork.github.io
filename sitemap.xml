@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://terryyaowork.github.io/devOps/20240915/3317806134/</loc>
+    
+    <lastmod>2024-09-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/devOps/20240915/3152381087/</loc>
+    
+    <lastmod>2024-09-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/devOps/20240915/3670510823/</loc>
     
     <lastmod>2024-09-15</lastmod>
@@ -284,13 +302,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/writing-style/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/tags/design-pattern/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -299,6 +310,13 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/design-pattern-creative/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/writing-style/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -319,7 +337,7 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/environment/</loc>
+    <loc>https://terryyaowork.github.io/tags/git/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -327,6 +345,41 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/devOps/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/environment/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/version-control/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/dev-tool/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/workflow/</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/release/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -374,34 +427,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://terryyaowork.github.io/tags/dev-tool/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/git/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/version-control/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/workflow/</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -419,14 +444,14 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/blog/</loc>
+    <loc>https://terryyaowork.github.io/categories/designpattern/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/designpattern/</loc>
+    <loc>https://terryyaowork.github.io/categories/blog/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -440,14 +465,14 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/macOS/</loc>
+    <loc>https://terryyaowork.github.io/categories/git/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/git/</loc>
+    <loc>https://terryyaowork.github.io/categories/macOS/</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
