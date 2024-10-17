@@ -290,13 +290,6 @@
 
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/Markdown/</loc>
-    <lastmod>2024-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/tags/blog-writing/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -304,14 +297,14 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/writing-style/</loc>
+    <loc>https://terryyaowork.github.io/tags/career-transition/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/career-transition/</loc>
+    <loc>https://terryyaowork.github.io/tags/writing-style/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -347,6 +340,13 @@
   
   <url>
     <loc>https://terryyaowork.github.io/tags/design-pattern-creative/</loc>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/Markdown/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -416,27 +416,6 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/tags/hexo/</loc>
-    <lastmod>2024-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/SEO/</loc>
-    <lastmod>2024-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/tags/marketing/</loc>
-    <lastmod>2024-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://terryyaowork.github.io/tags/jekyll/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -457,10 +436,31 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://terryyaowork.github.io/tags/hexo/</loc>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/SEO/</loc>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://terryyaowork.github.io/tags/marketing/</loc>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/markdown/</loc>
+    <loc>https://terryyaowork.github.io/categories/personalupdate/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -468,13 +468,6 @@
   
   <url>
     <loc>https://terryyaowork.github.io/categories/blog/</loc>
-    <lastmod>2024-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://terryyaowork.github.io/categories/personalupdate/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -495,6 +488,13 @@
   </url>
   
   <url>
+    <loc>https://terryyaowork.github.io/categories/markdown/</loc>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://terryyaowork.github.io/categories/%E6%95%99%E5%AD%B8/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -509,14 +509,14 @@
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/%E6%95%99%E5%AD%B8/Web-%E9%96%8B%E7%99%BC/</loc>
+    <loc>https://terryyaowork.github.io/categories/macOS/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://terryyaowork.github.io/categories/macOS/</loc>
+    <loc>https://terryyaowork.github.io/categories/%E6%95%99%E5%AD%B8/Web-%E9%96%8B%E7%99%BC/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
