@@ -89,33 +89,6 @@
   
   
   <entry>
-    <title>[hexo] Hexo 部署大小寫敏感問題排查與解決指南</title>
-    <link href="/blog/20241030/3996696377/"/>
-    <url>/blog/20241030/3996696377/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo-部署大小寫敏感問題完整筆記"><a href="#Hexo-部署大小寫敏感問題完整筆記" class="headerlink" title="Hexo 部署大小寫敏感問題完整筆記"></a>Hexo 部署大小寫敏感問題完整筆記</h1><p><img src="/images/hexo/05-hexo-case-sensitive.webp" alt="hexo 新增文章"></p><h2 id="情境描述"><a href="#情境描述" class="headerlink" title="情境描述"></a>情境描述</h2><p>在使用 Hexo 部署 GitHub Pages 的過程中，我們發現資料夾名稱在本地生成為小寫（如 <code>mac</code>），但在 GitHub 上會變回大寫（如 <code>Mac</code>）。這樣的情況會導致網址中大小寫不一致，對搜尋引擎優化（SEO）及現有的搜尋索引造成負面影響。這次異動的範圍其實超級大，尤其考量到之前已部署的頁面已經被搜尋引擎索引。</p><p>具體情境如下：</p><ol><li><p>初始狀況：</p><ul><li>本地 <code>hexo generate</code> 正確生成小寫的資料夾名稱。</li><li>在檢查 GitHub Pages 部署後，發現遠端仍然顯示為大寫的 <code>Mac</code> 資料夾。</li></ul></li><li><p>嘗試直接在 GitHub 上修改：</p><ul><li>我們手動在 GitHub 上將 <code>Mac</code> 資料夾刪除，並嘗試推送更改，這個步驟成功更新了 GitHub 上的資料夾名稱。</li><li>然而，當再次執行 <code>hexo deploy</code> 時，遠端又恢復為大寫的 <code>Mac</code>。</li></ul></li><li><p>分析問題：</p><ul><li>為了解決這個問題，我們先嘗試了使用 <code>rm -rf tags/Mac</code> 來刪除大寫資料夾，再推送確認 GitHub 上資料夾被刪除。</li><li>然後嘗試使用 <code>mv</code> 將 <code>Mac</code> 重命名為小寫的 <code>mac</code>，並確保這些變更已提交並推送。</li><li>但是每次重新執行 <code>hexo generate</code> 後，Hexo 依然生成了大寫的 <code>Mac</code> 資料夾。</li><li>最後，經分析認為可能是 Hexo 部署使用 <code>.deploy_git</code> 資料夾來管理緩存，這可能導致遠端在部署時帶回了之前的大小寫配置。</li><li>同時，Git 對於純大小寫變更無法敏感追蹤，因此可能需要手動強制 Git 認識這些大小寫的變更。</li></ul></li></ol><h3 id="SEO-和搜尋引擎索引的影響"><a href="#SEO-和搜尋引擎索引的影響" class="headerlink" title="SEO 和搜尋引擎索引的影響"></a>SEO 和搜尋引擎索引的影響</h3><p>需要特別注意的是，這樣的網址大小寫異動可能會對搜尋引擎造成以下負面影響：</p><ul><li><strong>搜尋不到已發佈內容</strong>：因為原本的 URL 已被索引，如果網址的大小寫異動或結構變動，搜尋引擎可能會無法正確找到頁面。</li><li><strong>現有索引失效</strong>：搜尋引擎已經索引過的 URL（如 <code>tags/Mac</code>）會因為大小寫變更導致無法正確對應，進而影響網站的搜尋排名和流量。</li><li><strong>網站權重受影響</strong>：若多次更改網址結構或出現 404 錯誤，會讓搜尋引擎認為網站不穩定，可能導致網站權重降低。</li></ul><p>這些問題的影響可能會持續一段時間，直到搜尋引擎重新索引新的 URL。因此，處理這個大小寫問題非常重要，尤其對於長期的網站流量及 SEO 成效。</p><h2 id="問題分析"><a href="#問題分析" class="headerlink" title="問題分析"></a>問題分析</h2><ul><li>Git 對大小寫變更的敏感度較低，在某些系統中（如 macOS）無法正確追蹤到大小寫差異。</li><li><code>.deploy_git</code> 資料夾緩存了之前的部署狀態，Hexo 使用它來維持部署記錄，導致每次 Hexo 部署時恢復為舊的大小寫配置。</li></ul><h2 id="解決方案"><a href="#解決方案" class="headerlink" title="解決方案"></a>解決方案</h2><h3 id="步驟-1：確認-config-yml-配置"><a href="#步驟-1：確認-config-yml-配置" class="headerlink" title="步驟 1：確認 _config.yml 配置"></a>步驟 1：確認 <code>_config.yml</code> 配置</h3><p>首先，檢查 Hexo 的 <code>_config.yml</code> 配置，特別是 <code>permalink</code> 的設定，確保不會影響資料夾的大小寫。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">permalink:</span> <span class="hljs-string">:category/:year:month:day/:abbrlink/</span><br><span class="hljs-attr">pretty_urls:</span><br>    <span class="hljs-attr">trailing_index:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">trailing_html:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure><h3 id="步驟-2：使用-mv-強制變更大小寫"><a href="#步驟-2：使用-mv-強制變更大小寫" class="headerlink" title="步驟 2：使用 mv 強制變更大小寫"></a>步驟 2：使用 <code>mv</code> 強制變更大小寫</h3><p>為了讓 Git 能夠正確追蹤大小寫變更，採用以下方法強制改變資料夾名稱：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 將資料夾臨時重命名為其他名稱</span><br><span class="hljs-built_in">mv</span> tags/Mac tags/mac_temp<br>git add tags/mac_temp<br>git commit -m <span class="hljs-string">&quot;Temporarily rename Mac to mac_temp&quot;</span><br>git push origin main<br><br><span class="hljs-comment"># 再將資料夾名稱更改回小寫的 `mac`</span><br><span class="hljs-built_in">mv</span> tags/mac_temp tags/mac<br>git add tags/mac<br>git commit -m <span class="hljs-string">&quot;Rename mac_temp back to mac&quot;</span><br>git push origin main<br></code></pre></td></tr></table></figure><p>這時候 push 後會發現 github 上面確實 <code>tags/Mac</code> 這些不如預期的網址不見了，但是當我們在做一次 <code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</code> 以後會發現現在的 github 這邊之前被我們刪掉的 <code>tags/Mac</code> 又跑出來了。<br>代表問題可能不是 github cache 或者 mac 上的 git 對於大小寫不敏感造成的問題，那跟部署相關的檔案剩下 <code>.deploy_git</code> 了，所以才會有嘗試把 <code>.deploy_git</code> 刪掉重建的選項。</p><h3 id="步驟-3：清空-deploy-git-資料夾"><a href="#步驟-3：清空-deploy-git-資料夾" class="headerlink" title="步驟 3：清空 .deploy_git 資料夾"></a>步驟 3：清空 <code>.deploy_git</code> 資料夾</h3><p>刪除 <code>.deploy_git</code> 資料夾，以防止 Hexo 使用緩存的部署狀態。這樣可以確保下次部署時會重新生成所有文件。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">rm</span> -rf .deploy_git<br></code></pre></td></tr></table></figure><h3 id="步驟-4：重新生成並部署"><a href="#步驟-4：重新生成並部署" class="headerlink" title="步驟 4：重新生成並部署"></a>步驟 4：重新生成並部署</h3><p>執行以下命令來清理、生成、並重新部署 Hexo 靜態網站，以確保所有檔案已更新為小寫名稱。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo generate<br>hexo deploy<br></code></pre></td></tr></table></figure><h3 id="步驟-5：檢查-GitHub-上的資料夾名稱"><a href="#步驟-5：檢查-GitHub-上的資料夾名稱" class="headerlink" title="步驟 5：檢查 GitHub 上的資料夾名稱"></a>步驟 5：檢查 GitHub 上的資料夾名稱</h3><p>完成部署後，前往 GitHub Repo，確認 <code>tags</code> 資料夾中小寫名稱（如 <code>mac</code>）已正確應用。</p><h2 id="備選方案"><a href="#備選方案" class="headerlink" title="備選方案"></a>備選方案</h2><p>若上述步驟無法解決問題，可考慮以下備選方案：</p><ul><li><strong>使用 GitHub Actions 部署</strong>：透過 GitHub Actions 來自動化部署流程，避免 <code>.deploy_git</code> 緩存問題的影響，並確保每次部署時自動清除舊的部署記錄。</li><li><strong>手動刪除遠端大寫資料夾</strong>：若大寫資料夾持續出現，可以在 <code>[your account].github.io</code> 的 <code>main</code> 分支中手動刪除並推送，確保重新部署時不會出現舊資料夾。</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>blog</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>hexo</tag>
-      
-      <tag>seo</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>00-aws-basic-concept</title>
     <link href="/aws/20241029/1064703203/"/>
     <url>/aws/20241029/1064703203/</url>
@@ -139,6 +112,33 @@
       <tag>VPC</tag>
       
       <tag>network</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>[hexo] Hexo 部署大小寫敏感問題排查與解決指南</title>
+    <link href="/blog/20241029/3996696377/"/>
+    <url>/blog/20241029/3996696377/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-部署大小寫敏感問題完整筆記"><a href="#Hexo-部署大小寫敏感問題完整筆記" class="headerlink" title="Hexo 部署大小寫敏感問題完整筆記"></a>Hexo 部署大小寫敏感問題完整筆記</h1><p><img src="/images/hexo/05-hexo-case-sensitive.webp" alt="hexo 新增文章"></p><h2 id="情境描述"><a href="#情境描述" class="headerlink" title="情境描述"></a>情境描述</h2><p>在使用 Hexo 部署 GitHub Pages 的過程中，我們發現資料夾名稱在本地生成為小寫（如 <code>mac</code>），但在 GitHub 上會變回大寫（如 <code>Mac</code>）。這樣的情況會導致網址中大小寫不一致，對搜尋引擎優化（SEO）及現有的搜尋索引造成負面影響。這次異動的範圍其實超級大，尤其考量到之前已部署的頁面已經被搜尋引擎索引。</p><p>具體情境如下：</p><ol><li><p>初始狀況：</p><ul><li>本地 <code>hexo generate</code> 正確生成小寫的資料夾名稱。</li><li>在檢查 GitHub Pages 部署後，發現遠端仍然顯示為大寫的 <code>Mac</code> 資料夾。</li></ul></li><li><p>嘗試直接在 GitHub 上修改：</p><ul><li>我們手動在 GitHub 上將 <code>Mac</code> 資料夾刪除，並嘗試推送更改，這個步驟成功更新了 GitHub 上的資料夾名稱。</li><li>然而，當再次執行 <code>hexo deploy</code> 時，遠端又恢復為大寫的 <code>Mac</code>。</li></ul></li><li><p>分析問題：</p><ul><li>為了解決這個問題，我們先嘗試了使用 <code>rm -rf tags/Mac</code> 來刪除大寫資料夾，再推送確認 GitHub 上資料夾被刪除。</li><li>然後嘗試使用 <code>mv</code> 將 <code>Mac</code> 重命名為小寫的 <code>mac</code>，並確保這些變更已提交並推送。</li><li>但是每次重新執行 <code>hexo generate</code> 後，Hexo 依然生成了大寫的 <code>Mac</code> 資料夾。</li><li>最後，經分析認為可能是 Hexo 部署使用 <code>.deploy_git</code> 資料夾來管理緩存，這可能導致遠端在部署時帶回了之前的大小寫配置。</li><li>同時，Git 對於純大小寫變更無法敏感追蹤，因此可能需要手動強制 Git 認識這些大小寫的變更。</li></ul></li></ol><h3 id="SEO-和搜尋引擎索引的影響"><a href="#SEO-和搜尋引擎索引的影響" class="headerlink" title="SEO 和搜尋引擎索引的影響"></a>SEO 和搜尋引擎索引的影響</h3><p>需要特別注意的是，這樣的網址大小寫異動可能會對搜尋引擎造成以下負面影響：</p><ul><li><strong>搜尋不到已發佈內容</strong>：因為原本的 URL 已被索引，如果網址的大小寫異動或結構變動，搜尋引擎可能會無法正確找到頁面。</li><li><strong>現有索引失效</strong>：搜尋引擎已經索引過的 URL（如 <code>tags/Mac</code>）會因為大小寫變更導致無法正確對應，進而影響網站的搜尋排名和流量。</li><li><strong>網站權重受影響</strong>：若多次更改網址結構或出現 404 錯誤，會讓搜尋引擎認為網站不穩定，可能導致網站權重降低。</li></ul><p>這些問題的影響可能會持續一段時間，直到搜尋引擎重新索引新的 URL。因此，處理這個大小寫問題非常重要，尤其對於長期的網站流量及 SEO 成效。</p><h2 id="問題分析"><a href="#問題分析" class="headerlink" title="問題分析"></a>問題分析</h2><ul><li>Git 對大小寫變更的敏感度較低，在某些系統中（如 macOS）無法正確追蹤到大小寫差異。</li><li><code>.deploy_git</code> 資料夾緩存了之前的部署狀態，Hexo 使用它來維持部署記錄，導致每次 Hexo 部署時恢復為舊的大小寫配置。</li></ul><h2 id="解決方案"><a href="#解決方案" class="headerlink" title="解決方案"></a>解決方案</h2><h3 id="步驟-1：確認-config-yml-配置"><a href="#步驟-1：確認-config-yml-配置" class="headerlink" title="步驟 1：確認 _config.yml 配置"></a>步驟 1：確認 <code>_config.yml</code> 配置</h3><p>首先，檢查 Hexo 的 <code>_config.yml</code> 配置，特別是 <code>permalink</code> 的設定，確保不會影響資料夾的大小寫。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">permalink:</span> <span class="hljs-string">:category/:year:month:day/:abbrlink/</span><br><span class="hljs-attr">pretty_urls:</span><br>    <span class="hljs-attr">trailing_index:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">trailing_html:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure><h3 id="步驟-2：使用-mv-強制變更大小寫"><a href="#步驟-2：使用-mv-強制變更大小寫" class="headerlink" title="步驟 2：使用 mv 強制變更大小寫"></a>步驟 2：使用 <code>mv</code> 強制變更大小寫</h3><p>為了讓 Git 能夠正確追蹤大小寫變更，採用以下方法強制改變資料夾名稱：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 將資料夾臨時重命名為其他名稱</span><br><span class="hljs-built_in">mv</span> tags/Mac tags/mac_temp<br>git add tags/mac_temp<br>git commit -m <span class="hljs-string">&quot;Temporarily rename Mac to mac_temp&quot;</span><br>git push origin main<br><br><span class="hljs-comment"># 再將資料夾名稱更改回小寫的 `mac`</span><br><span class="hljs-built_in">mv</span> tags/mac_temp tags/mac<br>git add tags/mac<br>git commit -m <span class="hljs-string">&quot;Rename mac_temp back to mac&quot;</span><br>git push origin main<br></code></pre></td></tr></table></figure><p>這時候 push 後會發現 github 上面確實 <code>tags/Mac</code> 這些不如預期的網址不見了，但是當我們在做一次 <code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</code> 以後會發現現在的 github 這邊之前被我們刪掉的 <code>tags/Mac</code> 又跑出來了。<br>代表問題可能不是 github cache 或者 mac 上的 git 對於大小寫不敏感造成的問題，那跟部署相關的檔案剩下 <code>.deploy_git</code> 了，所以才會有嘗試把 <code>.deploy_git</code> 刪掉重建的選項。</p><h3 id="步驟-3：清空-deploy-git-資料夾"><a href="#步驟-3：清空-deploy-git-資料夾" class="headerlink" title="步驟 3：清空 .deploy_git 資料夾"></a>步驟 3：清空 <code>.deploy_git</code> 資料夾</h3><p>刪除 <code>.deploy_git</code> 資料夾，以防止 Hexo 使用緩存的部署狀態。這樣可以確保下次部署時會重新生成所有文件。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">rm</span> -rf .deploy_git<br></code></pre></td></tr></table></figure><h3 id="步驟-4：重新生成並部署"><a href="#步驟-4：重新生成並部署" class="headerlink" title="步驟 4：重新生成並部署"></a>步驟 4：重新生成並部署</h3><p>執行以下命令來清理、生成、並重新部署 Hexo 靜態網站，以確保所有檔案已更新為小寫名稱。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo generate<br>hexo deploy<br></code></pre></td></tr></table></figure><h3 id="步驟-5：檢查-GitHub-上的資料夾名稱"><a href="#步驟-5：檢查-GitHub-上的資料夾名稱" class="headerlink" title="步驟 5：檢查 GitHub 上的資料夾名稱"></a>步驟 5：檢查 GitHub 上的資料夾名稱</h3><p>完成部署後，前往 GitHub Repo，確認 <code>tags</code> 資料夾中小寫名稱（如 <code>mac</code>）已正確應用。</p><h2 id="備選方案"><a href="#備選方案" class="headerlink" title="備選方案"></a>備選方案</h2><p>若上述步驟無法解決問題，可考慮以下備選方案：</p><ul><li><strong>使用 GitHub Actions 部署</strong>：透過 GitHub Actions 來自動化部署流程，避免 <code>.deploy_git</code> 緩存問題的影響，並確保每次部署時自動清除舊的部署記錄。</li><li><strong>手動刪除遠端大寫資料夾</strong>：若大寫資料夾持續出現，可以在 <code>[your account].github.io</code> 的 <code>main</code> 分支中手動刪除並推送，確保重新部署時不會出現舊資料夾。</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+      <tag>seo</tag>
       
     </tags>
     
@@ -615,9 +615,9 @@
     
     <tags>
       
-      <tag>markdown</tag>
-      
       <tag>部落格寫作</tag>
+      
+      <tag>markdown</tag>
       
     </tags>
     
